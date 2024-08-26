@@ -56,7 +56,7 @@ void loop()
   {
     triggering_data_to_Webhook_2();
   }
-  delay(1000); // Wait for 1 minute before reading light level again
+  delay(60000); // Wait for 1 minute before next reading
 }
 
 void triggering_data_to_Webhook_1() 
