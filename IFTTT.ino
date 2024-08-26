@@ -9,7 +9,7 @@ char pass [] = SECRET_PASS;
 WiFiClient client;
 
 BH1750 lightMeter; // Create an instance of the BH1750 light sensor library const 
-int ledCheck = 2;
+
 
 char HOST_NAME[] = "maker.ifttt.com"; // Website
 String PATH_NAME_1 = "https://maker.ifttt.com/trigger/light/with/key/moHh8LQ4zQ_kAwx4elV-gxXx0K2-GWxTZCerU8CpR-h"; // Key
@@ -32,8 +32,7 @@ void setup()
   }
   
   Serial.println("\nConnected to WiFi");
-
-  pinMode(ledCheck, OUTPUT);
+  
   Wire.begin();
   lightMeter.begin();
   Serial.println(F("BH1750 Test begin"));
